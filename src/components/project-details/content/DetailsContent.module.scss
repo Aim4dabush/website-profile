@@ -1,0 +1,76 @@
+@import "../../../styleVariables.scss";
+
+.detailsContainer {
+  display: flex;
+  padding: 0 1rem;
+
+  .contentWrapper {
+    background-color: $secondary;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 3px 3px 8px $shadow;
+    color: $primary;
+    padding: 0 1rem;
+
+    .languageWrapper {
+      display: flex;
+      font-size: 40px;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      width: 100%;
+    }
+
+    .responsive {
+      margin-top: 2rem;
+    }
+
+    .siteWrapper {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+
+      .link {
+        a {
+          color: $primary;
+
+          &:hover {
+            color: $link;
+          }
+        }
+      }
+    }
+  }
+
+  .imgWrapper {
+    .frame {
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      box-shadow: 3px 3px 8px $shadow;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 912px) {
+  .detailsContainer {
+    flex-direction: column;
+    width: 100%;
+
+    .contentWrapper {
+      .siteWrapper {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .detailsContainer {
+    .contentWrapper {
+      .siteWrapper {
+        font-size: 12px;
+      }
+    }
+  }
+}
