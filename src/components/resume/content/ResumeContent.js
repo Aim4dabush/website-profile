@@ -1,5 +1,5 @@
 //components
-import Iframe from "react-iframe";
+import Resume from "../../../assets/image/tech_resume.pdf";
 
 //styles
 import styles from "./ResumeContent.module.scss";
@@ -7,11 +7,7 @@ import styles from "./ResumeContent.module.scss";
 const ResumeContent = () => {
   return (
     <div className={styles.iframeContainer}>
-      <embed
-        alt="resume"
-        className={styles.resume}
-        src={process.env.PUBLIC_URL + "/tech_resume.pdf"}
-      />
+      <embed className={styles.resume} src={Resume} />
     </div>
   );
 };
