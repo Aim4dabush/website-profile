@@ -1,0 +1,78 @@
+@import "../../../styleVariables.scss";
+
+.contentContainer {
+  font-size: 25px;
+  padding: 0 2rem;
+  text-align: center;
+
+  .aloha {
+    color: $alt;
+    display: inline-flex;
+    overflow: hidden;
+
+    &::after {
+      content: "Hello";
+      position: absolute;
+      transform: rotateX(90deg) translateY(-30px);
+      transform-origin: top;
+      transition: transform 500ms ease-out;
+    }
+
+    &:hover::after {
+      transform: rotateX(0) translateY(0);
+      transform-origin: top;
+      transition: transform 500ms ease-in;
+    }
+
+    &::before {
+      content: "Aloha";
+      transform: rotateX(0) translateY(0);
+      transform-origin: bottom;
+      transition: transform 500ms ease-in;
+    }
+
+    &:hover::before {
+      transform: rotateX(90deg) translateY(50%);
+      transform-origin: bottom;
+      transition: transform 500ms ease-out;
+    }
+  }
+
+  .link {
+    color: $link;
+  }
+
+  .welcome {
+    color: #e49273;
+    display: inline-flex;
+    position: relative;
+
+    &::after {
+      content: "Welcome";
+      left: 10%;
+      position: absolute;
+      transform: rotateX(90deg) translateY(-50%);
+      transform-origin: top;
+      transition: transform 500ms ease-out;
+    }
+
+    &:hover::after {
+      transform: rotateX(0) translateY(0);
+      transform-origin: top;
+      transition: transform 500ms ease-in;
+    }
+
+    &::before {
+      content: "E komo mai ";
+      transform: rotateX(0) translateY(0);
+      transform-origin: bottom;
+      transition: transform 500ms ease-in;
+    }
+
+    &:hover::before {
+      transform: rotateX(90deg) translateY(50%);
+      transform-origin: bottom;
+      transition: transform 500ms ease-out;
+    }
+  }
+}
