@@ -1,0 +1,17 @@
+@import "../../../../styleVariables.scss";
+
+.experienceContainer {
+  color: $alt;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 100%;
+
+  .iconWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

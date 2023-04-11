@@ -1,0 +1,44 @@
+@import "../../../../styleVariables.scss";
+
+.message {
+  font-size: 20px;
+  font-weight: $bold;
+  margin: 0;
+  max-width: 1440px;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+
+  .aloha {
+    display: inline-flex;
+    overflow: hidden;
+
+    &::after {
+      color: $alt;
+      content: "Hello";
+      position: absolute;
+      transform: rotateX(90deg) translateY(-50%);
+      transform-origin: top;
+      transition: transform 500ms ease-out;
+    }
+
+    &:hover::after {
+      transform: rotateX(0) translateY(0);
+      transform-origin: top;
+      transition: transform 500ms ease-in;
+    }
+
+    &::before {
+      content: "Aloha";
+      transform: rotateX(0) translateY(0);
+      transform-origin: bottom;
+      transition: transform 500ms ease-in;
+    }
+
+    &:hover::before {
+      transform: rotateX(90deg) translateY(50%);
+      transform-origin: bottom;
+      transition: transform 500ms ease-out;
+    }
+  }
+}
