@@ -7,7 +7,7 @@ import styles from "./ResumeContent.module.scss";
 const ResumeContent = () => {
   return (
     <div className={styles.iframeContainer}>
-      <embed className={styles.resume} src={Resume} />
+      <iframe className={styles.resume} src={Resume} title="pdf resume" />
     </div>
   );
 };
