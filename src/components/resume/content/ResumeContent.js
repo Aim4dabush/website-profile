@@ -1,6 +1,6 @@
 //components
 import Iframe from "react-iframe";
-import Resume from "../../../assets/image/Tech Resume.pdf";
+import Resume from "../../../assets/image/tech_resume.pdf";
 
 //styles
 import styles from "./ResumeContent.module.scss";
