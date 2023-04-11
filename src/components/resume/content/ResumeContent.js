@@ -7,8 +7,8 @@ import styles from "./ResumeContent.module.scss";
 const ResumeContent = () => {
   return (
     <div className={styles.iframeContainer}>
-      <Iframe
-        allowFullScreen="true"
+      <embed
+        alt="resume"
         className={styles.resume}
         src={process.env.PUBLIC_URL + "/tech_resume.pdf"}
       />
