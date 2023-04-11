@@ -1,13 +1,15 @@
 //components
-import Resume from "../../../assets/image/tech_resume.pdf";
+import Resume from "../../../assets/tech_resume.pdf";
 
 //styles
 import styles from "./ResumeContent.module.scss";
 
 const ResumeContent = () => {
   return (
-    <div className={styles.iframeContainer}>
-      <iframe className={styles.resume} src={Resume} title="pdf resume" />
+    <div className={styles.resumeContainer}>
+      <object className={styles.resume} data={Resume} type="application/pdf">
+        Resume
+      </object>
     </div>
   );
 };
