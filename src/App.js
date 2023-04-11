@@ -1,13 +1,18 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 
+//components
+import Navbar from "./components/navbar/Navbar";
+
 //styles
-import "./App.module.scss";
+import styles from "./App.module.scss";
 
 function App() {
   return (
     <Fragment>
-      <header></header>
+      <header className={styles.header}>
+        <Navbar />
+      </header>
       <main>
         <Outlet />
       </main>

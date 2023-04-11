@@ -1,0 +1,62 @@
+@import "../../../styleVariables.scss";
+
+.list {
+  display: flex;
+  gap: 1rem;
+  padding-left: 1rem;
+
+  .link {
+    align-items: center;
+    color: $primary;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    position: relative;
+
+    &:hover {
+      color: $link;
+    }
+
+    &:hover .icon {
+      transform: rotateX(0) translateY(0);
+      transition: transform 500ms ease-in;
+    }
+
+    &:hover .txt {
+      transform: rotateX(90deg) translateY(30px);
+      transition: transform 500ms ease-out;
+    }
+
+    .icon {
+      background-color: $secondary;
+      position: absolute;
+      transform: rotateX(-90deg) translateY(-30px);
+      transform-origin: top;
+      transition: transform 500ms ease-out;
+    }
+
+    .txt {
+      transform: rotateX(0) translateY(0);
+      transform-origin: bottom;
+      transition: transform 500ms ease-in;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .list {
+    padding-left: 0;
+  }
+
+  .menuOpen {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .menuClose {
+    display: none;
+  }
+}
