@@ -1,0 +1,74 @@
+@import "../../../styleVariables.scss";
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+
+  .dotWrapper {
+    margin-bottom: 1rem;
+    .dot {
+      border-radius: 50%;
+      font-size: 30px;
+      margin: 0 0.5rem;
+    }
+
+    .nonCurrentDot {
+      background-color: transparent;
+    }
+
+    .currentDot {
+      background-color: $secondary;
+      opacity: 0.8;
+    }
+  }
+
+  .projectWrapper {
+    display: flex;
+
+    .btn {
+      border: none;
+      background-color: transparent;
+      color: $secondary;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .arrow {
+        font-size: 100px;
+        position: absolute;
+        top: 40%;
+
+        &:hover {
+          color: $link;
+        }
+      }
+
+      .leftArrow {
+        left: 0;
+      }
+
+      .rightArrow {
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    .projectWrapper {
+      .btn {
+        .arrow {
+          font-size: 50px;
+          top: 50%;
+        }
+      }
+    }
+  }
+}

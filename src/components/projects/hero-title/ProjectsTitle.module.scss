@@ -1,0 +1,89 @@
+@import "../../../styleVariables.scss";
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  transform: translateY(100%);
+  width: 100%;
+
+  .title {
+    align-items: center;
+    background-color: $secondary;
+    border-radius: 50%;
+    display: flex;
+    font-size: 25px;
+    height: 175px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 175px;
+
+    &::after {
+      color: $primary;
+      content: "Projects";
+      position: absolute;
+      transform: rotateX(-90deg) translateX(-75px);
+      transform-origin: left;
+      transition: transform 500ms ease-out;
+    }
+
+    &::before {
+      color: $alt;
+      content: "Na Papahana";
+      position: absolute;
+      transform: rotateX(0) translateX(0);
+      transform-origin: right;
+      transition: transform 500ms ease-in;
+    }
+
+    &:hover::after {
+      transform: rotateX(0) translateX(0);
+      transition: transform 500ms ease-in;
+    }
+
+    &:hover::before {
+      transform: rotateX(90deg) translateX(75px);
+      transition: transform 500ms ease-out;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .titleContainer {
+    .title {
+      height: 135px;
+      transform: translateY(25%);
+      width: 135px;
+
+      &::before {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .titleContainer {
+    .title {
+      font-size: 16px;
+      height: 110px;
+      width: 110px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .titleContainer {
+    .title {
+      height: 95px;
+      width: 95px;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .titleContainer {
+    transform: translateY(80%);
+  }
+}

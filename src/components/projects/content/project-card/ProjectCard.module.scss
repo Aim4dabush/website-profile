@@ -1,0 +1,63 @@
+@import "../../../../styleVariables.scss";
+
+.cardLink {
+  box-shadow: 3px 3px 8px $shadow;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+
+  .cardContainer {
+    background-color: $secondary;
+    display: flex;
+    color: $primary;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+
+    &:hover {
+      color: $link;
+    }
+
+    .cardContent {
+      align-items: center;
+      display: flex;
+      font-size: 30px;
+      justify-content: space-evenly;
+      padding: 0.5rem;
+    }
+
+    .cardHeader {
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .cardImg {
+      height: 80%;
+      .img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardLink {
+    .cardContainer {
+      height: 400px;
+
+      .cardImg {
+        height: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .cardLink {
+    .cardContainer {
+      height: 300px;
+    }
+  }
+}
