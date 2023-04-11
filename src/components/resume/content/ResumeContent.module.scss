@@ -1,0 +1,24 @@
+.iframeContainer {
+  height: 1100px;
+  padding: 1rem;
+  transform: translateY(-5%);
+  width: 100%;
+
+  .resume {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .iframeContainer {
+    height: 475px;
+  }
+}
+
+@media (max-width: 360px) {
+  .iframeContainer {
+    height: 400px;
+    transform: translateY(0);
+  }
+}
