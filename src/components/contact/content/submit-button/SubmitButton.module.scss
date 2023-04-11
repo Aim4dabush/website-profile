@@ -1,0 +1,18 @@
+@import "../../../../styleVariables.scss";
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 0.5em;
+
+  .btn {
+    background-color: $primary;
+    border: none;
+    border-radius: 8px;
+    color: $secondary;
+    font-family: $fontFamily;
+    font-size: 16px;
+    padding: 0.75em 2em;
+  }
+}

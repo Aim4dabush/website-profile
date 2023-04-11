@@ -1,0 +1,21 @@
+@import "../../../../styleVariables.scss";
+
+.textAreaControl {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.5em;
+  width: 100%;
+
+  .error {
+    color: $alt;
+    margin: 0;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  textarea {
+    border-radius: 8px;
+  }
+}

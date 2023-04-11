@@ -1,0 +1,11 @@
+.img {
+  max-height: 500px;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+@media (max-width: 667px) {
+  .img {
+    transform: translateY(-40%);
+  }
+}
