@@ -8,11 +8,11 @@ import styles from "./Resume.module.scss";
 
 const Resume = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <ResumeHero />
       <ResumeTitle />
       <ResumeContent />
-    </div>
+    </section>
   );
 };
 

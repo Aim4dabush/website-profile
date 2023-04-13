@@ -1,5 +1,5 @@
 //images
-import Lanikai from "../../../assets/image/page-hero/Lanikai.png";
+import Lanikai from "../../../assets/page-hero/Lanikai.png";
 
 //styles
 import styles from "./AboutHero.module.scss";

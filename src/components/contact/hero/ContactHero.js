@@ -1,5 +1,5 @@
 //images
-import Pipeline from "../../../assets/image/page-hero/pipeline.png";
+import Pipeline from "../../../assets/page-hero/pipeline.png";
 
 //styles
 import styles from "./ContactHero.module.scss";

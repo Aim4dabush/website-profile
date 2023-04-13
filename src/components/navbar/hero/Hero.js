@@ -1,5 +1,5 @@
 //images
-import Edward from "../../../assets/image/me.png";
+import Edward from "../../../assets/me.png";
 
 //styles
 import styles from "./Hero.module.scss";

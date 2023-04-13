@@ -1,5 +1,5 @@
 //images
-import Makapuu from "../../../assets/image/page-hero/makapuu.png";
+import Makapuu from "../../../assets/page-hero/makapuu.png";
 
 //styles
 import styles from "./ProjectsHero.module.scss";

@@ -8,11 +8,11 @@ import styles from "./ProjectDetails.module.scss";
 
 const ProjectDetails = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <DetailsHero />
       <DetailsTitle />
       <DetailsContent />
-    </div>
+    </section>
   );
 };
 

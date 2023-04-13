@@ -8,11 +8,11 @@ import styles from "./Contact.module.scss";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <ContactHero />
       <ContactTitle />
       <ContactContent />
-    </div>
+    </section>
   );
 };
 

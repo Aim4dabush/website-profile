@@ -62,9 +62,7 @@ const DetailsContent = () => {
   return (
     <div className={styles.detailsContainer}>
       <div className={styles.imgWrapper}>
-        <video className={styles.frame} autoPlay loop muted>
-          <source src={project.gif} type="video/mp4" />
-        </video>
+        <img className={styles.frame} src={project.image} alt={project.title} />
       </div>
       <div className={styles.contentWrapper}>
         <h2>{project.title}</h2>

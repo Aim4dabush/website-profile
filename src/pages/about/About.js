@@ -8,11 +8,11 @@ import styles from "./About.module.scss";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <AboutHero />
       <AboutTitle />
       <AboutContent />
-    </div>
+    </section>
   );
 };
 

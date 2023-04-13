@@ -1,5 +1,5 @@
 //images
-import Aloha from "../../../assets/image/page-hero/aloha.png";
+import Aloha from "../../../assets/page-hero/aloha.png";
 
 //styles
 import styles from "./HomeHero.module.scss";
