@@ -7,8 +7,8 @@ import {
 //components
 import ProjectCard from "./project-card/ProjectCard";
 
-//data
-import { data } from "../../data/data";
+//redux
+import { useSelector } from "react-redux";
 
 //styles
 import styles from "./ProjectsContent.module.scss";
@@ -16,7 +16,8 @@ import { useState } from "react";
 
 const ProjectsContent = () => {
   const [current, setCurrent] = useState(0);
-  const length = data?.length;
+  const data = useSelector((state) => state.projects.projects);
+  const length = data.length;
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);

@@ -9,14 +9,15 @@ import {
   FaSass,
 } from "react-icons/fa";
 
-//data
-import { data } from "../../data/data";
+//redux
+import { useSelector } from "react-redux";
 
 //styles
 import styles from "./DetailsContent.module.scss";
 
 const DetailsContent = () => {
   const { title } = useParams();
+  const data = useSelector((state) => state.projects.projects);
   const project = data.find((item) => {
     return item.id === title;
   });

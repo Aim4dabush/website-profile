@@ -1,6 +1,6 @@
 # Profile Website
 
-Deployed Site: [https://master.d1idrjhiur9tte.amplifyapp.com/](https://master.d1idrjhiur9tte.amplifyapp.com/)
+Deployed Site: [https://www.edward-arasato.com](https://www.edward-arasato.com)
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ Create a website to showcase my projects and to let companies know a little bit 
 
 ### What I learned
 
-Used a lot of css `animation`, `transform`, and `translate`. Using `useParams` and array methods to dynamically display projects from my data file. `useHistory` to navigate back to the previous page. I am most proud of my project carousel. It took me a bit to figure out the logic to get it working properly.
+Used a lot of css `animation`, `transform`, and `translate`. I used firebase firestore as my database to hold my project data. Firebase storage to hold my project pictures. Redux and Redux Toolkit to handle my state management. Using `useParams` to dynamically display my projects. I am most proud of my project carousel. It took me a bit to figure out the logic to get it working properly.
 
 ## Tools
 
@@ -36,15 +36,22 @@ Used a lot of css `animation`, `transform`, and `translate`. Using `useParams` a
 - React
 - React Router V6
 - React Icon
+- Redux
+- Redux Toolkit
 - CSS
 - HTML
 - Sass
+- Firebase
 - AWS Amplify
 
 ### Useful Resources
 
 - React Router v6: [https://reactrouter.com/docs/en/v6/getting-started/overview](https://reactrouter.com/docs/en/v6/getting-started/overview)
+- Redux: [https://react-redux.js.org/](https://react-redux.js.org/)
+- Redux Toolkit: [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
 - Sass: [https://sass-lang.com/](https://sass-lang.com/)
+- Firebase: [https://firebase.google.com/](https://firebase.google.com/)
+- AWS Amplify: [https://aws.amazon.com/amplify/](https://aws.amazon.com/amplify/)
 
 ## Aurthor
 

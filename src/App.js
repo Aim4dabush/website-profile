@@ -1,5 +1,8 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
+import { getProjects } from "./redux/thunks/projectsThunk";
 
 //components
 import Navbar from "./components/navbar/Navbar";
@@ -8,6 +11,11 @@ import Navbar from "./components/navbar/Navbar";
 import styles from "./App.module.scss";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProjects());
+  }, [dispatch]);
   return (
     <Fragment>
       <header className={styles.header}>
