@@ -10,7 +10,7 @@ const ResumeContent = () => {
     <div className={styles.container}>
       <a
         className={styles.link}
-        href="https://drive.google.com/file/d/1bGaFXDadSQQ5JvfIa-dzRRD0qcZvUW1B/view?usp=share_link"
+        href="https://drive.google.com/file/d/133eZetHhofKPYPlIOH1w8tsMe2LqYZEo/view?usp=sharing"
         rel="noopener noreferrer"
         target="_blank"
         download
